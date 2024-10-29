@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script def src="commons.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form id="formulario">
+      <div>
+        <label for="nombre">Introduce tu nombre</label>
+        <input type="text" name="nombre" id="nombre" />
+        <div class="error" id="mensajeErrorNombre"></div>
+        <br /><br />
+        <label for="apellidos">Introduce tu apellido</label>
+        <input type="text" name="apellidos" id="apellidos" />
+        <div class="error" id="mensajeErrorApellidos"></div>
+        <br /><br />
+        <input type="submit" value="Validar" id="boton" />
+      </div>
+    </form>
+  </body>
+</html>

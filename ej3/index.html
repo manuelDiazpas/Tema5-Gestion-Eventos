@@ -9,16 +9,58 @@
 
   <body>
     <form id="formulario">
-      <div>
-        <label for="nombre">Introduce tu nombre</label>
-        <input type="text" name="nombre" id="nombre" />
-        <br /><br />
-        <label for="nombre2">Introduce otro nombre</label>
-        <input type="text" name="nombre2" id="nombre2" />
-        <br /><br />
-        <button id="boton">Pulsame!</button>
-        <button id="boton2">Cambiame!!</button>
-      </div>
+      <label for="alergenos"
+        >Indicar sustancias que pueden causar alergias:
+      </label>
+      <input
+        type="checkbox"
+        name="alergenos[]"
+        id="alergenos[]"
+        value="Gluten"
+      />Gluten
+      <input
+        type="checkbox"
+        name="alergenos[]"
+        id="alergenos[]"
+        value="Huevo"
+      />Huevo
+      <input
+        type="checkbox"
+        name="alergenos[]"
+        id="alergenos[]"
+        value="Cacahuete"
+      />Cacahuete
+      <input
+        type="checkbox"
+        name="alergenos[]"
+        id="alergenos[]"
+        value="Soja"
+      />Soja
+      <input
+        type="checkbox"
+        name="alergenos[]"
+        id="alergenos[]"
+        value="Lacteo"
+      />Lácteo
+      <input
+        type="checkbox"
+        name="alergenos[]"
+        id="alergenos[]"
+        value="Sulfitos"
+      />Sulfitos
+      <input
+        type="checkbox"
+        name="alergenos[]"
+        id="alergenos[]"
+        value="Frutos Con Cascara"
+      />Frutos Con Cascara
+      <input
+        type="checkbox"
+        name="alergenos[]"
+        id="alergenos[]"
+        value="Sin Alergenos"
+      />Sin Alérgenos
+      <button id="validar">Validar</button>
     </form>
   </body>
 </html>
