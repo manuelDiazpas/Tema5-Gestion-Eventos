@@ -5,13 +5,25 @@
  * el comportamiento debe ser igual al ejercicio anterior
  */
 
-primeraMayuscula = (e) => {
-  const nombre = e.target.value.charAt(0).toUpperCase();
-  if (e.target.value.charAt(0) !== nombre) {
+primeraVocal = (e) => {
+  trueFalse = false;
+  $vocal = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"];
+
+  for (let index = 0; index < $vocal.length; index++) {
+    const element = $vocal[index];
+    if (e.target.value.charAt(0) == element) {
+      trueFalse = true;
+      break;
+    } else if (e.target.value.charAt(0) != element) {
+      trueFalse = false;
+    }
+  }
+
+  if (!trueFalse) {
     document.getElementById("mensajeErrorNombre").innerHTML =
-      "Tiene que tener la primera en mayúscula";
+      "Tiene que tener la primera en vocal";
     return false;
-  } else {
+  } else if (trueFalse) {
     document.getElementById("mensajeErrorNombre").innerHTML = "";
     return true;
   }
